@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState, lazy} from 'react';
 import {Button, Container, Navbar, Nav, Image, NavDropdown} from 'react-bootstrap';
-import logo from '../images/logo-2.0.webp';
+import logo from '../logo-2.0.webp';
 import '../css/components/Topnav.scss';
 // const logo = lazy(() => import('../images/logo-2.0.webp'))
 
