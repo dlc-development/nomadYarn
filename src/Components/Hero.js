@@ -1,7 +1,7 @@
 import { Button, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import heroImage from '../images/home-hero.webp';
+import heroImage from './home-hero.webp';
 import '../css/components/Hero.scss';
 
 const Hero = () => {
