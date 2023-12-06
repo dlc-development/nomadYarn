@@ -25,10 +25,11 @@ function App() {
 
       </Helmet>
         <Topnav  thisContext={thisContext} />
-        <Router>
+        {/* <Router>
           <Home path='/' />
           <Test2 path='/asd' />
-        </Router>
+        </Router> */}
+        <Home />
     </HelmetProvider>
   );
 }

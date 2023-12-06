@@ -17,7 +17,7 @@ const Home = (props) => {
             <Helmet>
             <title>Study Abroad Admission Guide with Finance options | Nomad Credit</title>
             <meta name='description' content="Explore your journey to studying abroad with valuable admission guidance and financing options. Plan your dream education journey today with Nomad Credit!" /> 
-                <link rel="canonical" href={props.location.href} />
+                {/* <link rel="canonical" href={props.location.href} /> */}
             </Helmet>
             <Hero />
         </>
