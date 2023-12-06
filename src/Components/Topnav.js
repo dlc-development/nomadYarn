@@ -1,7 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {Button, Container, Navbar, Nav, Image, NavDropdown} from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import '../css/components/Topnav.scss';
 
 const Topnav = (props) => {
@@ -36,7 +34,8 @@ const Topnav = (props) => {
   const setThisPortal = (torf) => {
     setIsPortal(torf)
   }
-  const thisContext = useContext(props.ThemeContext);
+  // const thisContext = useContext(props.ThemeContext);
+  const thisContext = props.thisContext;
 
   const items = [
     // {

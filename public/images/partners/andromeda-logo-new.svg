@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="196" height="34" viewBox="0 0 196 34">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_24487" data-name="Rectangle 24487" width="196" height="34" transform="translate(-19303 -11783)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_168" data-name="Mask Group 168" transform="translate(19303 11783)" clip-path="url(#clip-path)">
+    <g id="logo" transform="translate(-19303.439 -11789.689)">
+      <g id="Group_121982" data-name="Group 121982" transform="translate(0.44 8.35)">
+        <path id="Path_197661" data-name="Path 197661" d="M19.336,21.74l-3.582-10.1L.44,40.64,14.612,20.112Z" transform="translate(-0.44 -10.428)" fill="#03c1f3"/>
+        <path id="Path_197662" data-name="Path 197662" d="M10.632,65.59,4.18,75.138l30.367.085L11.808,71.276Z" transform="translate(-2.802 -44.498)" fill="#004988"/>
+        <path id="Path_197663" data-name="Path 197663" d="M50.146,35.865,60.78,37.188,45.72,8.35l8,24.022Z" transform="translate(-29.035 -8.35)" fill="#008dcf"/>
+        <text id="ANDROMEDA" transform="translate(36.427 16.339)" fill="#004988" font-size="21" font-family="Helvetica" letter-spacing="0.08em"><tspan x="0" y="0">ANDROME</tspan><tspan y="0" letter-spacing="0.07em">D</tspan><tspan y="0">A</tspan></text>
+        <text id="INDIA_S_LARGEST_LOAN_DISTRIBUTOR" data-name="INDIA’S LARGEST LOAN DISTRIBUTOR" transform="translate(36 29)" fill="#03c1f3" font-size="8.3" font-family="NotoSans-Regular, Noto Sans" letter-spacing="0.025em"><tspan x="0" y="0">INDIA’S LARGEST LOAN DISTRIBUTOR</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
