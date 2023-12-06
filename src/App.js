@@ -1,7 +1,8 @@
 import {lazy} from 'react';
 import logo from './logo.svg';
 import './App.css';
-const Test = lazy(() => import('./Components/Test'));;
+import { Router, Link, Redirect } from "@reach/router";
+const Test = lazy(() => import('./Components/Test'));
 
 
 
