@@ -2,6 +2,7 @@ import {lazy} from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import logo from './logo.svg';
 import './App.css';
+import './css/App.scss';
 import { Router, Link, Redirect } from "@reach/router";
 const Test = lazy(() => import('./Components/Test'));
 const Test2 = lazy(() => import('./Components/Test2'));
