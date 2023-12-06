@@ -1,8 +1,11 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState, lazy} from 'react';
 import {Button, Container, Navbar, Nav, Image, NavDropdown} from 'react-bootstrap';
+import logo from '../images/logo-2.0.webp';
 import '../css/components/Topnav.scss';
+// const logo = lazy(() => import('../images/logo-2.0.webp'))
 
 const Topnav = (props) => {
+  console.log('logo', logo)
   const [isLanding, setIsLanding] = useState(false);
   const [showDd, setShowDd] = useState({});
   const setThisLanding = (torf) => {
@@ -111,7 +114,8 @@ const Topnav = (props) => {
       return(
         <Navbar className={isLanding ? `` : 'top-nav '}  expand="lg">
           <Container className=''>
-          <Navbar.Brand href='/index' style={logoStyle}><Image  alt='Nomad Credit Logo' style={{maxWidth:'200px', margin:'auto'}} fluid={true} src="/images/logo-2.0.webp"/></Navbar.Brand>
+          <Navbar.Brand href='/index' style={logoStyle}><Image  alt='Nomad Credit Logo' style={{maxWidth:'200px', margin:'auto'}} fluid={true} src={logo}/></Navbar.Brand>
+          {/* <a href="/index" class="navbar-brand"><img alt="Nomad Credit Logo" src="/images/logo-2.0.webp" class="img-fluid" style="max-width: 200px; margin: auto;" /></a> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className='' id={`basic-navbar-nav`}>
               <div className='menu-holder d-none d-md-block d-lg-block d-xl-block d-xxl-block'>
@@ -176,21 +180,21 @@ const Topnav = (props) => {
     
   }
 
-  useEffect(() => {
-    fetch(`/api/v1/whoami`)
-            .then(response => response.json())
-            .then(response => {
-                if(response.logged_in) setThisPortal(true);
-            })
-            .catch(error => {
-                console.log('error', ""+error);
-            });
+  // useEffect(() => {
+  //   fetch(`/api/v1/whoami`)
+  //           .then(response => response.json())
+  //           .then(response => {
+  //               if(response.logged_in) setThisPortal(true);
+  //           })
+  //           .catch(error => {
+  //               console.log('error', ""+error);
+  //           });
 
-    if(!thisContext.landingPages) return;
-    if(thisContext.landingPages.includes(window.location.pathname)){
-      setThisLanding(true);
-    }
-  }, [])
+  //   if(!thisContext.landingPages) return;
+  //   if(thisContext.landingPages.includes(window.location.pathname)){
+  //     setThisLanding(true);
+  //   }
+  // }, [])
 
   useEffect(() => {
     let thisPath = window.location.pathname.split('/');
