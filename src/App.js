@@ -1,6 +1,8 @@
+import {lazy} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Test from './Components/Test';
+const Test = lazy(() => import('./Components/Test'));;
+
 
 
 function App() {
