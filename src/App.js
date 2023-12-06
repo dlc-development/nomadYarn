@@ -1,11 +1,12 @@
 import {lazy} from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import logo from './logo.svg';
 import './App.css';
 import { Router, Link, Redirect } from "@reach/router";
 const Test = lazy(() => import('./Components/Test'));
 const Test2 = lazy(() => import('./Components/Test2'));
-const Helmet = lazy(() => import('react-helmet-async'));
-const HelmetProvider = lazy(() => import('react-helmet-async'));
+// const Helmet = lazy(() => import('react-helmet-async'));
+// const HelmetProvider = lazy(() => import('react-helmet-async'));
 
 
 
