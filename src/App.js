@@ -1,12 +1,11 @@
 import {lazy} from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import logo from './logo.svg';
 import './App.css';
 import './css/App.scss';
 import { Router, Link, Redirect } from "@reach/router";
 const Topnav = lazy(() => import('./Components/Topnav'));
-const Test = lazy(() => import('./Components/Test'));
 const Test2 = lazy(() => import('./Components/Test2'));
+const Home = lazy(() => import('./Views/Home'));
 // const Helmet = lazy(() => import('react-helmet-async'));
 // const HelmetProvider = lazy(() => import('react-helmet-async'));
 
@@ -27,7 +26,7 @@ function App() {
       </Helmet>
         <Topnav  thisContext={thisContext} />
         <Router>
-          <Test path='/' />
+          <Home path='/' />
           <Test2 path='/asd' />
         </Router>
     </HelmetProvider>
